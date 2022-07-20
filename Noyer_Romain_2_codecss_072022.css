@@ -4,44 +4,247 @@
     src: url('police/Raleway_Medium.ttf') format('truetype');
 }
 
-/* Body */
-
-#bloc_page {
-    width: 992px;
+header,
+section,
+aside,
+footer,
+p,
+ul,
+h1 {
+    font-family: 'Raleway_Medium';
 }
 
 
-/* Header */
+/**DESKTOP**/
 
-/* Navigation */
+@media all and (min-width:992px) {
 
-nav ul {
-    list-style-type: none;
+    /* Body */
+
+    #bloc_page {
+        margin: 30px;
+    }
+
+    /* Header */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header img {
+        width: 100px;
+        margin: 15px 15px 15px 25px;
+    }
+
+    #navigateur {
+        display: flex;
+        gap: 60px;
+    }
+
+    #navigateur a:hover {
+        color: #0065FC;
+        border-top: 2px solid #0065FC;
+        padding: 44px 20px 0px 20px;
+        margin: 0px -20px 0px -20px;
+    }
+
+    /* Navigation */
+
+    nav ul {
+        list-style-type: none;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* Formulaire */
+
+    #titre_formulaire h1 {
+        font-size: 21px;
+        font-weight: bold;
+        margin-bottom: -5px;
+    }
+
+    /* Filtres */
+
+    #filtre {
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    #filtre h1 {
+        font-size: 20px;
+    }
+
+    #filtre ul {
+        display: flex;
+        list-style-type: none;
+        margin-left: -15px;
+    }
+
+    #filtre li {
+        font-size: 20px;
+        font-weight: bold;
+        border: 1px solid rgb(0, 0, 0, 0.2);
+        border-radius: 30px;
+        padding: 12px 20px 12px 40px;
+        margin: 15px 15px 15px 15px;
+    }
+
+    /* Section 1 */
+
+    #section1_aside {
+        display: flex;
+    }
+
+    #section1_titre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #section1 {
+        display: flex;
+        flex-direction: column;
+        margin-right: 30px;
+        background-color: #F2F2F2;
+        border-radius: 20px;
+    }
+
+    #hebergements {
+        display: flex;
+        flex-flow: wrap;
+        margin: -15px;
+        border-radius: 20px;
+    }
+
+    .card {
+        width: 240px;
+        height: 200px;
+        margin: 20px;
+        box-shadow: 0px 1px 1px black;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .card a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .card_image img {
+        width: 230px;
+        height: 110px;
+        margin-left: 5px;
+        margin-top: 5px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .card_title h2 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-left: 15px;
+    }
+
+    .card_prix p {
+        font-size: 15px;
+        margin-left: 15px;
+    }
+
+    /* Aside Section 1 */
+
+    aside {
+        background-color: #F2F2F2;
+        border-radius: 20px;
+    }
+
+    #populaire {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card_aside {
+        width: 320px;
+        height: 150px;
+        margin: 20px;
+        box-shadow: 0px 1px 1px black;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .card_aside a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .card_image_aside img {
+        width: 130px;
+        height: 140px;
+        margin-left: 5px;
+        margin-top: 5px;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .card_title_aside h2 {
+        font-size: 16px;
+        font-weight: bold;
+        margin: -130px 10px 15px 150px;
+    }
+
+    .card_prix_aside p {
+        font-size: 16px;
+        margin: 0px 15px 15px 150px;
+    }
+
+    /* Section Activités */
+
+    #section2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #activites {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card_activite {
+        width: 300px;
+        height: 200px;
+        margin: 20px;
+        box-shadow: 0px 1px 1px black;
+        background-color: white;
+        border-radius: 20px;
+    }
+
+    .card_activite a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .card_image_activite img {
+        width: 300px;
+        height: 110px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .card_title_activite h2 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-left: 15px;
+    }
+
+    .card_prix_activite p {
+        font-size: 15px;
+        margin-left: 15px;
+    }
 }
-
-nav a {
-    text-decoration: none;
-    color: black;
-}
-
-/* Section 1 */
-
-#section1 {
-    display: flex;
-    background-color: #F2F2F2;
-}
-
-#p_hebergements {}
-
-#p_activites {}
-
-/* Aside */
-
-aside {
-    background-color: #F2F2F2;
-}
-
-/* Section 2*/
 
 /* Footer */
 
@@ -78,4 +281,131 @@ footer a {
 
 #assistance {
     width: 33%;
+}
+
+/**TABLET**/
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+
+    /* Header */
+
+}
+
+/**PHONE**/
+
+@media all and (max-width:768px) {
+
+    /* Body */
+
+    #bloc_page {
+        margin: 15px;
+    }
+
+    /* Header */
+
+    header img {
+        display: flex;
+        width: 100px;
+        margin: auto;
+    }
+
+    #navigateur {
+        display: flex;
+        gap: 60px;
+    }
+
+    #nagivateur a:hover {
+        color: #0065FC;
+        border-top: 2px solid #0065FC;
+    }
+
+    /* Navigation */
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        margin: 30px 0px 50px -4px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+    }
+
+    /* Formulaire */
+
+    #titre_formulaire {
+        text-align: justify;
+    }
+
+    #titre_formulaire h1 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: -5px;
+    }
+
+    /* Filtres */
+
+    #filtre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #filtre h1 {
+        font-size: 18px;
+    }
+
+    #filtre ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        list-style-type: none;
+    }
+
+    #filtre li {
+        font-size: 20px;
+        font-weight: bold;
+        border: 1px solid rgb(0, 0, 0, 0.2);
+        border-radius: 30px;
+        padding: 12px 15px 12px 40px;
+        margin: 15px 15px 15px 15px;
+    }
+
+    /* Footer */
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        margin-left: -7px;
+        margin-right: -7px;
+    }
+
+    footer ul {
+        font-size: 12px;
+        list-style-type: none;
+    }
+
+    footer h1 {
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 39px
+    }
+
+    footer a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #a_propos {
+        width: 33%;
+    }
+
+    #nos_hebergements {
+        width: 33%;
+    }
+
+    #assistance {
+        width: 33%;
+    }
 }
