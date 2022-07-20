@@ -251,17 +251,25 @@ h1 {
 footer {
     display: flex;
     background-color: #F2F2F2;
+    padding: 2em;
     margin-left: -7px;
     margin-right: -7px;
 }
 
+footer li {
+    font-size: 15px;
+}
+
 footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     font-size: 12px;
     list-style-type: none;
 }
 
 footer h1 {
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     margin-left: 39px
 }
