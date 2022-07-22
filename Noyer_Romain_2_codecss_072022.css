@@ -391,8 +391,8 @@ ul {
 
     .card_image_activite_b21 img {
         width: 300px;
-        height: 180px;
-        object-fit: none;
+        height: 175px;
+        object-fit: cover;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
@@ -412,8 +412,8 @@ ul {
 
     .card_image_activite_b22 img {
         width: 300px;
-        height: 110px;
-        object-fit: none;
+        height: 105px;
+        object-fit: cover;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
@@ -435,8 +435,8 @@ ul {
 
     .card_image_activite_b41 img {
         width: 300px;
-        height: 140px;
-        object-fit: none;
+        height: 135px;
+        object-fit: cover;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
@@ -456,8 +456,8 @@ ul {
 
     .card_image_activite_b42 img {
         width: 300px;
-        height: 150px;
-        object-fit: none;
+        height: 145px;
+        object-fit: cover;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
