@@ -88,6 +88,34 @@ ul {
         margin-bottom: -5px;
     }
 
+    form {
+        display: flex;
+    }
+
+    input {
+        padding: 15px
+    }
+
+    #map {
+        width: 50px;
+        background-color: #F2F2F2;
+        border-radius: 15px 0px 0px 15px;
+        border: 0px;
+    }
+
+    #ville {
+        border: 1px solid #F2F2F2;
+    }
+
+    #rechercher {
+        width: 130px;
+        font-size: 17px;
+        background-color: #0065FC;
+        border-radius: 0px 15px 15px 0px;
+        border: 0ex;
+        color: white;
+    }
+
     /* Filtres */
 
     #filtre {
@@ -108,60 +136,60 @@ ul {
     }
 
     #filtre li {
-        font-size: 20px;
+        display: flex;
+        font-size: 17px;
         font-weight: bold;
         border: 2px solid rgb(0, 0, 0, 0.2);
         border-radius: 30px;
-        padding: 0px 20px 0px 0px;
-        margin: 15px 5px 15px 5px;
+        padding: 10px 20px 10px 0px;
+        margin: 0px 20px 0px 0px;
+    }
+
+    #filtre a {
+        text-decoration: none;
+        color: black;
     }
 
     .fa-money-bill-wave {
-        height: 25px;
-        width: 25px;
         font-size: 100%;
         color: #0065FC;
         background-color: #DEEBFF;
         border: 2px solid #DEEBFF;
         border-radius: 100%;
-        margin: -2px 10px -2px -2px;
-        padding: 10px 10px 10px 10px;
+        padding: 15px 15px 15px 15px;
+        margin: -12px 7px -12px -3px;
     }
 
     .fa-child-reaching {
-        height: 25px;
-        width: 25px;
+
         font-size: 100%;
         color: #0065FC;
         background-color: #DEEBFF;
         border: 2px solid #DEEBFF;
         border-radius: 100%;
-        margin: -2px 10px -2px -2px;
-        padding: 10px 10px 10px 10px;
+        padding: 15px 17px 15px 17px;
+        margin: -12px 7px -12px -3px;
     }
 
     .fa-heart {
-        height: 25px;
-        width: 25px;
+
         font-size: 100%;
         color: #0065FC;
         background-color: #DEEBFF;
         border: 2px solid #DEEBFF;
         border-radius: 100%;
-        margin: -2px 10px -2px -2px;
-        padding: 10px 10px 10px 10px;
+        padding: 15px 15px 15px 15px;
+        margin: -12px 7px -12px -3px;
     }
 
     .fa-dog {
-        height: 25px;
-        width: 25px;
         font-size: 100%;
         color: #0065FC;
         background-color: #DEEBFF;
         border: 2px solid #DEEBFF;
         border-radius: 100%;
-        margin: -2px 10px -2px -2px;
-        padding: 10px 10px 10px 10px;
+        padding: 15px 15px 15px 15px;
+        margin: -12px 7px -12px -3px;
     }
 
     .fa-info {
@@ -184,10 +212,16 @@ ul {
     #section1 {
         display: flex;
         flex-direction: column;
-        margin: 0px 040px 0px 0px;
-        padding: 30px 0px 0px 40px;
+        justify-content: space-evenly;
+        margin: 0px 40px 0px 0px;
+        padding: 0px 0px 0px 40px;
         background-color: #F2F2F2;
         border-radius: 20px;
+    }
+
+    #bouton_section1 a {
+        text-decoration: none;
+        color: black;
     }
 
     #hebergements {
@@ -203,7 +237,7 @@ ul {
         background-color: white;
         border-radius: 20px;
         list-style-type: none;
-        margin: 5px 30px 30px 0px;
+        margin: 0px 30px 30px 0px;
     }
 
     .card a {
@@ -265,7 +299,7 @@ ul {
     .card_aside {
         width: 340px;
         height: 150px;
-        margin: 30px 0px 40px 0px;
+        margin: 30px 0px 30px 0px;
         box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.2);
         background-color: white;
         border-radius: 20px;
@@ -369,7 +403,7 @@ ul {
     .card_image_activite_b1_b3 img {
         width: 300px;
         height: 385px;
-        object-fit: none;
+        object-fit: cover;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
