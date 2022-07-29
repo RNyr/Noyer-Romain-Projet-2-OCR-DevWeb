@@ -1,60 +1,43 @@
 /* Polices */
-@font-face {
-    font-family: 'Raleway_Medium';
-    src: url('police/Raleway_Medium.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
-@font-face {
-    font-family: 'Raleway_ExtraBold';
-    src: url('police/Raleway_Extrabold.ttf') format('truetype');
-}
-
-h1 {
-    font-family: 'Raleway_ExtraBold';
-    font-size: 22px;
-}
-
-header,
-section,
-aside,
-footer,
-p,
-ul {
-    font-family: 'Raleway_Medium';
+* {
+    font-family: 'Raleway', sans-serif;
 }
 
 /* Font Awesome */
 
-/*<i class="fa-solid fa-info fa-sm">*/
 /*<i class="fa-solid fa-money-bill-wave"></i>*/
 /*<i class="fa-solid fa-child-reaching"></i>*/
 /*<i class="fa-solid fa-heart"></i>*/
 /*<i class="fa-solid fa-dog"></i>*/
+/*<i class="fa-solid fa-info">*/
 /*<i class="fa-solid fa-star"></i>*/
 
-/**DESKTOP**/
+/** ALL Device **/
+
+/**START DESKTOP**/
 
 @media all and (min-width:992px) {
 
-    /* Body */
+    /** Body **/
 
     #bloc_page {
         margin: 50px;
-        width: 1340px;
     }
 
-    /* Header */
+    /** Start Header **/
+
+    /* Navigateur */
 
     #navigateur {
         display: flex;
         justify-content: space-between;
-        margin: 0px 0px 0px 19px;
     }
 
-    header img {
-        width: 50%;
-        margin-top: -6px;
-        margin-bottom: 15px;
+    #navigateur img {
+        width: 45%;
+        margin: -6px 0px 15px 19px;
     }
 
     #navigateur_ul {
@@ -67,8 +50,8 @@ ul {
     #navigateur a:hover {
         color: #0065FC;
         border-top: 3px solid #0065FC;
-        padding: 47px 20px 0px 20px;
-        margin: 0px -20px 0px -20px;
+        padding: 47px 25px 0px 25px;
+        margin: 0px -25px 0px -25px;
     }
 
     nav ul {
@@ -85,7 +68,11 @@ ul {
     #titre_formulaire h1 {
         font-size: 22px;
         font-weight: bold;
-        margin-bottom: -5px;
+    }
+
+    #titre_formulaire p {
+        font-size: 16px;
+
     }
 
     form {
@@ -103,51 +90,66 @@ ul {
         border: 0px;
     }
 
+    #map:hover {
+        box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.2);
+    }
+
     #ville {
+        width: 240px;
+        font-weight: bold;
         border: 1px solid #F2F2F2;
     }
 
     #rechercher {
         width: 130px;
         font-size: 17px;
+        font-weight: bold;
         background-color: #0065FC;
         border-radius: 0px 15px 15px 0px;
-        border: 0ex;
+        border: 0px;
         color: white;
     }
 
-    /* Filtres */
+    #rechercher:hover {
+        box-shadow: 0px 0px 5px #0065FC;
+    }
+
+    /* Start Filtres */
 
     #filtre {
         display: flex;
-        align-items: center;
-        margin-left: 10px;
+        flex-wrap: wrap;
+        align-items: baseline;
+        font-size: 9px;
+        margin: 20px 0px 0px 10px;
     }
 
-    #filtre h1 {
-        font-family: 'Raleway_ExtraBold';
-        font-size: 20px;
+    #filtre button {
+        font-size: 18px;
+        font-weight: bold;
+        background-color: white;
+        border: 2px solid rgb(0, 0, 0, 0.2);
+        border-radius: 30px;
+        padding: 10px 15px 10px 0px;
+        margin: 0px 20px 0px 0px;
     }
 
     #filtre ul {
         display: flex;
+        flex-wrap: wrap;
         list-style-type: none;
         margin-left: -15px;
-    }
-
-    #filtre li {
-        display: flex;
-        font-size: 17px;
-        font-weight: bold;
-        border: 2px solid rgb(0, 0, 0, 0.2);
-        border-radius: 30px;
-        padding: 10px 20px 10px 0px;
-        margin: 0px 20px 0px 0px;
     }
 
     #filtre a {
         text-decoration: none;
         color: black;
+    }
+
+    #filtre button:hover {
+
+        background-color: #F2F2F2;
+        box-shadow: 0px 0px 10px black;
     }
 
     .fa-money-bill-wave {
@@ -157,7 +159,7 @@ ul {
         border: 2px solid #DEEBFF;
         border-radius: 100%;
         padding: 15px 15px 15px 15px;
-        margin: -12px 7px -12px -3px;
+        margin: -12px 10px -12px -3px;
     }
 
     .fa-child-reaching {
@@ -168,7 +170,7 @@ ul {
         border: 2px solid #DEEBFF;
         border-radius: 100%;
         padding: 15px 17px 15px 17px;
-        margin: -12px 7px -12px -3px;
+        margin: -12px 10px -12px -3px;
     }
 
     .fa-heart {
@@ -179,7 +181,7 @@ ul {
         border: 2px solid #DEEBFF;
         border-radius: 100%;
         padding: 15px 15px 15px 15px;
-        margin: -12px 7px -12px -3px;
+        margin: -12px 10px -12px -3px;
     }
 
     .fa-dog {
@@ -189,7 +191,7 @@ ul {
         border: 2px solid #DEEBFF;
         border-radius: 100%;
         padding: 15px 15px 15px 15px;
-        margin: -12px 7px -12px -3px;
+        margin: -12px 10px -12px -3px;
     }
 
     .fa-info {
@@ -197,120 +199,152 @@ ul {
         border: 1px solid rgb(0, 0, 0, 0.2);
         border-radius: 100%;
         padding: 10px 8px 10px 8px;
+        margin: 10px;
     }
 
-    .fa-star {
+    .blue-star {
         color: #0065FC;
     }
 
-    /* Section 1 */
+    .grey-star {
+        color: #F2F2F2;
+    }
 
-    #section1_aside {
+    /* End Filtre */
+
+    /** End Header **/
+
+    /** Start Main **/
+
+    /* Start Section 1 */
+
+    main {
         display: flex;
+    }
+
+    #section1 h2 {
+        font-size: 22px;
     }
 
     #section1 {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        margin: 0px 40px 0px 0px;
-        padding: 0px 0px 0px 40px;
+        width: 80%;
         background-color: #F2F2F2;
         border-radius: 20px;
-    }
-
-    #bouton_section1 a {
-        text-decoration: none;
-        color: black;
+        margin: 0px 40px 0px 0px;
+        padding: 0px 40px 0px 40px;
     }
 
     #hebergements {
         display: flex;
+        justify-content: space-between;
         flex-flow: wrap;
         border-radius: 20px;
     }
 
+    #bouton_section1 button {
+        cursor: pointer;
+        border: none;
+        color: black;
+        background-color: #F2F2F2;
+        font-weight: bold;
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    /* Card */
+
     .card {
-        width: 240px;
-        height: 200px;
+        width: 30%;
         box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.2);
         background-color: white;
-        border-radius: 20px;
-        list-style-type: none;
-        margin: 0px 30px 30px 0px;
+        border-radius: 25px;
+        margin: 0% 0% 5% 0%;
     }
 
     .card a {
-        display: flex;
-        flex-direction: column;
+        padding: 7px;
+        height: 100%;
+        display: block;
+        box-sizing: border-box;
+        color: #3c3c3c;
+        background-color: #ffffff;
+        border-radius: 25px;
         text-decoration: none;
     }
 
+    .card:hover {
+        box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+    }
 
-    .card_body {
-        list-style-type: none;
-        padding-left: 10px;
-        color: black;
+    .card_image {
+        height: 150px;
     }
 
     .card_image img {
-        width: 230px;
-        height: 110px;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
-        margin: 5px 5px -25px 5px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
+        border-radius: 20px 20px 0px 0px;
     }
 
-    .card_title h2 {
-        font-size: 16px;
+    .card_body {
+        display: flex;
+        flex-direction: column;
+        color: black;
+    }
+
+    .card_title h3 {
+        font-size: 17px;
         font-weight: bold;
-        margin-left: 0px;
+        margin: 10px 0px 0px 20px;
     }
 
     .card_prix p {
         font-size: 15px;
-        margin-left: 0px;
+        margin: 5px 0px 0px 20px;
     }
 
     .card_star {
         display: flex;
+        margin: 5px 0px 0px 20px;
+        list-style-type: none;
     }
+
+    /* End Section 1 */
 
     /* Aside Section 1 */
 
     aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 27%;
         background-color: #F2F2F2;
         border-radius: 20px;
         margin: 0px 0px 0px 0px;
         padding: 30px 40px 0px 40px;
     }
 
-    aside h1 {
+    aside h2 {
         display: flex;
         justify-content: space-between;
-    }
+        font-size: 22px;
 
-    #populaire {
-        display: flex;
-        flex-direction: column;
     }
 
     .card_aside {
-        width: 340px;
+        width: 100%;
         height: 150px;
-        margin: 30px 0px 30px 0px;
+        margin: 0px 0px 30px 0px;
         box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.2);
         background-color: white;
         border-radius: 20px;
     }
 
-    .card_body_aside {
-        display: flex;
-        flex-direction: column;
-        list-style-type: none;
-        gap: 10px;
-
+    .card_aside:hover {
+        box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
     }
 
     .card_aside a {
@@ -319,24 +353,41 @@ ul {
         text-decoration: none;
     }
 
-    .card_image_aside img {
-        width: 130px;
+    .card_image_aside {
+        width: 40%;
         height: 140px;
+    }
+
+    .card_image_aside img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
-        margin-left: 5px;
-        margin-top: 5px;
-        margin-right: -30px;
+        padding: 5px;
         border-top-left-radius: 20px;
         border-bottom-left-radius: 20px;
     }
 
-    .card_title_aside h2 {
+    .card_body_aside {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        width: 60%;
+    }
+
+    .card_title_aside h3 {
         font-size: 16px;
         font-weight: bold;
     }
 
     .card_prix_aside p {
         font-size: 16px;
+    }
+
+    .card_star_aside {
+        display: flex;
+        position: absolute;
+        margin: 130px 0px 0px 20px;
+        list-style-type: none;
     }
 
     /* Section Activités */
@@ -347,38 +398,16 @@ ul {
         margin-top: 50px;
     }
 
+    #section2 h2 {
+        font-size: 22px;
+    }
+
     #activites {
         display: flex;
         gap: 45px;
     }
 
-    #block2et4 {
-        display: flex;
-        flex-direction: column;
-        gap: 50px;
-    }
-
-    .card_activite {
-        width: 300px;
-        height: 110px;
-        box-shadow: 0px 1px 1px black;
-        background-color: white;
-        border-radius: 20px;
-    }
-
-    .card_activite a {
-        color: black;
-        text-decoration: none;
-    }
-
-    .card_image_activite img {
-        width: 300px;
-        height: 110px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-
-    .card_title_activite h2 {
+    .card_title_activite h3 {
         font-size: 16px;
         font-weight: bold;
         margin-left: 15px;
@@ -387,8 +416,15 @@ ul {
 
     /* Block 1 et 3*/
 
+    #block1 {
+        width: 25%;
+    }
+
+    #block3 {
+        width: 25%;
+    }
+
     .card_activite_b1_b3 {
-        width: 300px;
         height: 440px;
         box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.2);
         background-color: white;
@@ -400,22 +436,41 @@ ul {
         text-decoration: none;
     }
 
-    .card_image_activite_b1_b3 img {
-        width: 300px;
+    .card_activite_b1_b3:hover {
+        box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+    }
+
+    .card_image_activite_b1_b3 {
         height: 385px;
+    }
+
+
+    .card_image_activite_b1_b3 img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
 
-    /*Block 2*/
+    /* Block 2* et 4 */
+
+    .block2et4 {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+        gap: 50px;
+    }
 
     .card_activite_b21 {
-        width: 300px;
         height: 230px;
         box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.2);
         background-color: white;
         border-radius: 20px;
+    }
+
+    .card_activite_b21:hover {
+        box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
     }
 
     .card_activite_b21 a {
@@ -423,20 +478,27 @@ ul {
         text-decoration: none;
     }
 
-    .card_image_activite_b21 img {
-        width: 300px;
+    .card_image_activite_b21 {
         height: 175px;
+    }
+
+    .card_image_activite_b21 img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
 
     .card_activite_b22 {
-        width: 300px;
         height: 160px;
         box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.2);
         background-color: white;
         border-radius: 20px;
+    }
+
+    .card_activite_b22:hover {
+        box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
     }
 
     .card_activite_b22 a {
@@ -444,22 +506,27 @@ ul {
         text-decoration: none;
     }
 
-    .card_image_activite_b22 img {
-        width: 300px;
+    .card_image_activite_b22 {
         height: 105px;
+    }
+
+    .card_image_activite_b22 img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
 
-    /* Block 4*/
-
     .card_activite_b41 {
-        width: 300px;
         height: 190px;
         box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.2);
         background-color: white;
         border-radius: 20px;
+    }
+
+    .card_activite_b41:hover {
+        box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
     }
 
     .card_activite_b41 a {
@@ -467,20 +534,27 @@ ul {
         text-decoration: none;
     }
 
-    .card_image_activite_b41 img {
-        width: 300px;
+    .card_image_activite_b41 {
         height: 135px;
+    }
+
+    .card_image_activite_b41 img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
 
     .card_activite_b42 {
-        width: 300px;
         height: 200px;
         box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.2);
         background-color: white;
         border-radius: 20px;
+    }
+
+    .card_activite_b42:hover {
+        box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
     }
 
     .card_activite_b42 a {
@@ -488,38 +562,39 @@ ul {
         text-decoration: none;
     }
 
-    .card_image_activite_b42 img {
-        width: 300px;
+    .card_image_activite_b42 {
         height: 145px;
+    }
+
+    .card_image_activite_b42 img {
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
 
+    /** End Main **/
 
-
-    /* Footer */
+    /** Start Footer **/
 
     footer {
         display: flex;
-        width: 1380px;
         background-color: #F2F2F2;
-        padding: 2em;
-        margin-left: -7px;
-        margin-right: -7px;
+        padding: 20px;
+        margin: 50px -50px -50px -50px;
     }
 
     footer li {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     footer ul {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        font-size: 13px;
         list-style-type: none;
-        margin-left: -7px;
+        margin-left: -10px;
     }
 
     footer h1 {
@@ -544,9 +619,13 @@ ul {
     #assistance {
         width: 33%;
     }
+
+    /** Start Footer **/
 }
 
-/**TABLET**/
+/** START DESKTOP **/
+
+/** START TABLET **/
 
 @media all and (min-width: 768px) and (max-width: 992px) {
 
@@ -554,86 +633,14 @@ ul {
 
 }
 
-/**PHONE**/
+/** END TABLET **/
+
+/** START PHONE **/
 
 @media all and (max-width:768px) {
 
     /* Body */
 
-    #bloc_page {
-        margin: 15px;
-    }
-
-    /* Header */
-
-    header img {
-        display: flex;
-        width: 100px;
-        margin: auto;
-    }
-
-    #navigateur {
-        display: flex;
-        gap: 60px;
-    }
-
-    #nagivateur a:hover {
-        color: #0065FC;
-        border-top: 2px solid #0065FC;
-    }
-
-    /* Navigation */
-
-    nav ul {
-        display: flex;
-        justify-content: space-around;
-        list-style-type: none;
-        margin: 30px 0px 50px -4px;
-    }
-
-    nav a {
-        text-decoration: none;
-        color: black;
-    }
-
-    /* Formulaire */
-
-    #titre_formulaire {
-        text-align: justify;
-    }
-
-    #titre_formulaire h1 {
-        font-size: 20px;
-        font-weight: bold;
-        margin-bottom: -5px;
-    }
-
-    /* Filtres */
-
-    #filtre {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #filtre h1 {
-        font-size: 18px;
-    }
-
-    #filtre ul {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-        list-style-type: none;
-    }
-
-    #filtre li {
-        font-size: 20px;
-        font-weight: bold;
-        border: 1px solid rgb(0, 0, 0, 0.2);
-        border-radius: 30px;
-        padding: 12px 15px 12px 40px;
-        margin: 15px 15px 15px 15px;
-    }
 
     /* Footer */
 
@@ -672,3 +679,5 @@ ul {
         width: 33%;
     }
 }
+
+/** END PHONE **/
