@@ -17,7 +17,7 @@
             <div id="navigateur">
                 <div id="image_booki"><img src="images/logo/booki.png" alt="Booki"></div>
                 <nav>
-                    <ul id="navigateur_ul">
+                    <ul>
                         <li><a href="#section1">Hébergements</a></li>
                         <li><a href="#section2">Activités</a></li>
                     </ul>
@@ -31,19 +31,24 @@
             <form>
                 <button id="map"><i class="fa-solid fa-location-dot"></i></button>
                 <input id="ville" type="search">
-                <button id="rechercher">Rechercher</button>
+                <button id="rechercher">
+                    <p>Rechercher</p><i class="fa-solid fa-magnifying-glass"></i>
+                </button>
             </form>
 
             <div id="filtre">
                 <h1>Filtres</h1>
-                <ul>
-                    <li><button><i class="fa-solid fa-money-bill-wave"></i>Économique</button></li>
-                    <li><button><i class="fa-solid fa-child-reaching"></i>Familial</button></li>
-                    <li><button><i class="fa-solid fa-heart"></i>Romantique</button></li>
-                    <li><button><i class="fa-solid fa-dog"></i>Animaux autorisés</button></li>
-                </ul>
+                <div>
+                    <button><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
+                    <button><i class="fa-solid fa-child-reaching"></i>Familial</button>
+                    <button><i class="fa-solid fa-heart"></i>Romantique</button>
+                    <button><i class="fa-solid fa-dog"></i>Animaux autorisés</button>
+                </div>
             </div>
-            <p><i class="fa-solid fa-info fa-sm"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+            <div id='info'>
+                <span><i class="fa-solid fa-info fa-sm"></i></span>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
         </header>
         <main>
             <section id="section1">
