@@ -857,7 +857,7 @@
         justify-content: space-evenly;
         background-color: #F2F2F2;
         border-radius: 20px;
-        padding: 30px 40px 0px 40px;
+        padding: 0px 40px 0px 40px;
     }
 
     aside h2 {
@@ -1393,7 +1393,7 @@
         justify-content: space-evenly;
         background-color: #F2F2F2;
         border-radius: 20px;
-        padding: 30px 20px 0px 20px;
+        padding: 0px 20px 0px 20px;
     }
 
     aside h2 {
