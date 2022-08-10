@@ -5,18 +5,6 @@
     font-family: 'Raleway', sans-serif;
 }
 
-/* Font Awesome */
-
-/*<i class="fa-solid fa-money-bill-wave"></i>*/
-/*<i class="fa-solid fa-child-reaching"></i>*/
-/*<i class="fa-solid fa-heart"></i>*/
-/*<i class="fa-solid fa-dog"></i>*/
-/*<i class="fa-solid fa-info">*/
-/*<i class="fa-solid fa-star"></i>*/
-/*<i class="fa-solid fa-magnifying-glass"></i>*/
-
-/** ALL DEVICE **/
-
 /* Start Filtres */
 
 #filtre {
@@ -160,6 +148,8 @@
         color: black;
     }
 
+    /* End Navigateur */
+
     /* Start Formulaire */
 
     #titre_formulaire h1 {
@@ -221,8 +211,6 @@
     }
 
     /* End Formulaire */
-
-    /* End Navigateur */
 
     /** End Header **/
 
@@ -638,7 +626,7 @@
 
 /** START TABLET **/
 
-@media all and (min-width: 768px) and (max-width: 992px) {
+@media all and (min-width: 767px) and (max-width: 991px) {
 
     /** Body **/
 
@@ -1199,8 +1187,8 @@
     #navigateur a:hover {
         color: #0065FC;
         border-bottom: 3px solid #0065FC;
-        padding: 0px 100px 10px 100px;
-        margin: 0px -100px 0px -100px;
+        padding: 0px 80px 10px 80px;
+        margin: 0px -80px 0px -80px;
     }
 
     nav ul {
@@ -1392,7 +1380,6 @@
         flex-direction: column;
         justify-content: space-evenly;
         background-color: #F2F2F2;
-        border-radius: 20px;
         padding: 15px 20px 0px 20px;
     }
 
@@ -1656,7 +1643,7 @@
         flex-direction: column;
         background-color: #F2F2F2;
         padding: 20px;
-        margin: 50px -50px -50px -50px;
+        margin: 50px 0px 0px -50px;
     }
 
     footer li {
@@ -1668,8 +1655,7 @@
         flex-direction: column;
         gap: 10px;
         list-style-type: none;
-        padding-left: 0px;
-        margin-left: 50px;
+        margin-left: 10px;
     }
 
     footer h1 {
